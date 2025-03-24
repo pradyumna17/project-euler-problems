@@ -15,19 +15,24 @@ def isPalindrome(x):
 
 
 def getLargestPalindromeProduct(n):
+    if n <= 0:
+        return 0
+    if n == 1:
+        return 9
     a = 10 ** (n - 1)
     b = 10 ** n - 1
     c = b
     curr = 0
     while c >= a:
-        d = b
+        r = 1 if not c % 11 else 11
+        d = b if r == 1 or not len(str(c)) % 2 else b - 9
         while d >= c:
             p = c * d
             if p <= curr:
                 break
             if isPalindrome(str(p)):
                 curr = p
-            d -= 1
+            d -= r
         c -= 1
     return curr
 
