@@ -19,7 +19,7 @@ def sieveOfEratosthenes(n):
     limit = int(sqrt(n)) + 1
     while i <= limit:
         if sieve[i]:
-            for mult in range(i**2, n + 1, i):
+            for mult in range(i ** 2, n + 1, i):
                 sieve[mult] = False
         i += 1
     return [prime for prime in range(2, n + 1) if sieve[prime]]
