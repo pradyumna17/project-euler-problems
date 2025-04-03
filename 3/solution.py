@@ -21,7 +21,7 @@ def getLargestPrimeFactor(n):
     while n > 1 and i <= limit:
         if not n % i:
             factors.append(i)
-            n = n // i
+            n //= i
         i += 1
     return max(factors) if factors else n
 
