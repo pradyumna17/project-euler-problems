@@ -7,3 +7,4 @@ Personal repository for solved problems from [Project Euler](https://projecteule
 3. [Largest Prime Factor](https://projecteuler.net/problem=3)
 4. [Largest Palindrome Product](https://projecteuler.net/problem=4)
 5. [Smallest Multiple](https://projecteuler.net/problem=5)
+6. [Sum Square Difference](https://projecteuler.net/problem=6)
