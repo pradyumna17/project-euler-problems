@@ -8,3 +8,4 @@ Personal repository for solved problems from [Project Euler](https://projecteule
 4. [Largest Palindrome Product](https://projecteuler.net/problem=4)
 5. [Smallest Multiple](https://projecteuler.net/problem=5)
 6. [Sum Square Difference](https://projecteuler.net/problem=6)
+7. [10001st Prime](https://projecteuler.net/problem=7)
