@@ -65,5 +65,5 @@ def getSmallestDivisibleNumber(high, low=1):
 
 
 if __name__ == "__main__":
-    sol = getSmallestDivisibleNumber(-1)
+    sol = getSmallestDivisibleNumber(20)
     print(sol)
