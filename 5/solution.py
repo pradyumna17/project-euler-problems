@@ -14,15 +14,15 @@ from math import sqrt
 
 
 def sieveOfEratosthenes(n):
-    sieve = [True] * (n + 1)
+    sieve = [True] * n
+    limit = int(sqrt(n))
     i = 2
-    limit = int(sqrt(n)) + 1
     while i <= limit:
         if sieve[i]:
-            for mult in range(i ** 2, n + 1, i):
+            for mult in range(i ** 2, n, i):
                 sieve[mult] = False
         i += 1
-    return [prime for prime in range(2, n + 1) if sieve[prime]]
+    return [prime for prime in range(2, n) if sieve[prime]]
 
 
 def getPrimeFactorsFreq(n):
