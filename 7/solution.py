@@ -18,15 +18,15 @@ def getNthPrime(n):
         primes = [2, 3, 5, 7, 11]
         return primes[n - 1]
     ubound = int(n * log(n) + n * log(log(n))) + 1
-    sieve = [True] * (ubound + 1)
+    sieve = [True] * (ubound)
+    limit = int(sqrt(ubound))
     i = 2
-    limit = int(sqrt(ubound)) + 1
     while i <= limit:
         if sieve[i]:
-            for mult in range(i ** 2, ubound + 1, i):
+            for mult in range(i ** 2, ubound, i):
                 sieve[mult] = False
         i += 1
-    primes = [prime for prime in range(2, ubound + 1) if sieve[prime]]
+    primes = [prime for prime in range(2, ubound) if sieve[prime]]
     return primes[n - 1]
 
 
