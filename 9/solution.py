@@ -13,10 +13,12 @@ Solution: 31875000
 
 from math import sqrt
 
+
 def calcGCD(a, b):
     while b:
         a, b = b, a % b
     return a
+
 
 def getTriplets(s):
     s //= 2
