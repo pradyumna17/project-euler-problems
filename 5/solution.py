@@ -50,6 +50,8 @@ def countFreq(lst):
 
 
 def getSmallestDivisibleNumber(high, low=1):
+    if high <= 0 or low <= 0:
+        return 0
     globalFreq = getPrimeFactorsFreq(low)
     for i in range(low + 1, high + 1):
         localFreq = getPrimeFactorsFreq(i)
@@ -63,5 +65,5 @@ def getSmallestDivisibleNumber(high, low=1):
 
 
 if __name__ == "__main__":
-    sol = getSmallestDivisibleNumber(20)
+    sol = getSmallestDivisibleNumber(-1)
     print(sol)
