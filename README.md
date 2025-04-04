@@ -10,3 +10,4 @@ Personal repository for solved problems from [Project Euler](https://projecteule
 6. [Sum Square Difference](https://projecteuler.net/problem=6)
 7. [10001st Prime](https://projecteuler.net/problem=7)
 8. [Largest Product in a Series](https://projecteuler.net/problem=8)
+10. [Summation of Primes](https://projecteuler.net/problem=10)
