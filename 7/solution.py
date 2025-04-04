@@ -16,7 +16,7 @@ from math import log, sqrt
 def getNthPrime(n):
     if n < 6:
         primes = [2, 3, 5, 7, 11]
-        return primes[n - 1]
+        return primes[n - 1] if n > 0 else 0
     ubound = int(n * log(n) + n * log(log(n))) + 1
     sieve = [True] * (ubound)
     limit = int(sqrt(ubound))
