@@ -12,7 +12,7 @@ Solution: 233168
 
 def sumOfDivisors(n, target):
     x = target // n
-    return int(n * x * (x + 1) / 2)
+    return n * x * (x + 1) // 2
 
 
 if __name__ == "__main__":

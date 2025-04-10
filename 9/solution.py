@@ -38,7 +38,7 @@ def getTriplets(s):
                     a = (m ** 2 - n ** 2) * d
                     b = 2 * m * n * d
                     c = (m ** 2 + n ** 2) * d
-                    triplets.append((a,b,c))
+                    triplets.append((a, b, c))
                 k += 2
         m += 1
     return triplets
