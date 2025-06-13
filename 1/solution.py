@@ -10,12 +10,12 @@ Solution: 233168
 """
 
 
-def sumOfDivisors(n, target):
+def sumOfMultiples(n, target):
     x = target // n
     return n * x * (x + 1) // 2
 
 
 if __name__ == "__main__":
     target = 999
-    sol = sumOfDivisors(3, target) + sumOfDivisors(5, target) - sumOfDivisors(15, target)
+    sol = sumOfMultiples(3, target) + sumOfMultiples(5, target) - sumOfMultiples(15, target)
     print(sol)
